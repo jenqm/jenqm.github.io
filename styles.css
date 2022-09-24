@@ -1,0 +1,215 @@
+* {
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+
+:root {
+    --accent-color: rgb(200 224 241);
+    --main-color: #555;
+    --secondary: #333;
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+
+html {
+    scroll-padding-top: 200px; 
+}
+
+body {
+    /* background-color: var(--main-color); */
+    font-family: 'PT Sans Narrow', sans-serif; 
+    background-image: url(/bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;   
+    
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: bolder;
+    word-spacing: -1px;
+    font-family: 'WindSong', cursive;
+    margin-bottom: 0;
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: var(--secondary);
+}
+
+p { 
+    padding: 0 20px;
+}
+/* Start Nav */
+#navbar{
+    background-color: var(--accent-color);
+    color: var(--accent-color);
+}
+
+.nav-container {
+    display: flex;
+    position: fixed;
+    top: 0;
+    background-color: var(--accent-color);
+    width: 100%;
+    height: 100px;
+    left: 0;
+    padding: 15px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.name {
+    font-family: 'WindSong', cursive;
+    font-weight: bold;
+    position: absolute;
+    left: 10px;
+    filter: drop-shadow(2px 2px 1px #333);
+    
+}
+.nav-link, .name {
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+/* Start Welcome */
+
+#profile {
+    width: 200px;
+    border-radius: 75%;
+    align-items: center;
+}
+
+#welcome-section{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    background-color: var(--accent-color);
+    border-radius: 10% / 50%;
+    text-align: center;
+    margin-top: 200px;
+}
+
+#welcome-section p {
+    font-size: 1.25em;
+    word-spacing: 3px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+/* Start About */
+
+#about-me {
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+    margin-top: 200px;
+}
+
+/* Start Projects */
+
+#projects, #about-me, #contact {
+    background-color: var(--accent-color);
+    font-size: 1.5em;
+    margin-top: 200px;
+    text-align: center;
+    padding: 25px 15px;
+    border-radius: 10% 40%/50% 20%;
+    width: 75%;
+    height: 100%;
+    justify-content: center;
+    margin-left: 12.5%;
+}
+
+#projects h2 {
+    margin-bottom: 50px;
+}
+
+.project-tile{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.project-img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.project-name {
+    margin-top: 0;
+    text-shadow: 1.5px 2px 2px rgb(169, 179, 179);
+}
+
+/* Start Contact */
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 5px; 
+    margin-bottom: 100px;
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    margin: 50px 0;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 980px;
+    flex-wrap: wrap;
+}
+
+#contact a {
+    color: var(--main-color);
+    text-align: center;
+    padding: 0 24px;
+}
+/* .btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 2px;
+} */
+
+.contact-details{
+    text-shadow: 1.5px 2px 2px rgb(169, 179, 179);
+}
+
+.contact-details, .project-img {
+    transition: transform 0.3s ease-out;
+}
+.contact-details:hover,
+.project-img:hover {
+    transform: translateY(8px);
+  }
+
+footer{
+    border-top: 4px solid var(--main-color);
+    color: white;
+    text-align: center;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+
+@media  screen and (max-width:850px) {
+    .project-tile {
+        display: flex;
+        flex-direction: column;
+    }
+}
