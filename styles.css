@@ -213,3 +213,21 @@ footer{
         flex-direction: column;
     }
 }
+
+@media screen and (max-width: 360px) {
+    .name {
+        position: absolute;
+        top: -4px; 
+        left: 35vw;
+
+    }
+
+    .nav-container {
+        justify-content: center;
+        align-items: end;
+    }
+
+    h1 {
+        font-size: calc(1.5rem + 3vw);
+    }
+}
