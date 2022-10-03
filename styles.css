@@ -22,7 +22,7 @@ html {
 body {
     /* background-color: var(--main-color); */
     font-family: 'PT Sans Narrow', sans-serif; 
-    background-image: url(/bg.jpg);
+    background-image: url(/bg-min.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;   
     
