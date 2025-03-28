@@ -170,30 +170,31 @@ section {
   -webkit-clip-path: polygon(0 0, 46% 0, 79% 100%, 0% 100%);
           clip-path: polygon(0 0, 46% 0, 79% 100%, 0% 100%);
 }
-.header-content .left-header .image img {
+.header-content .left-header img {
   width: 60%;
   height: 60%;
-  left: 10%;
   position: relative;
+  left: 10%;
   transition: all 0.4s ease-in-out;
   filter: grayscale(100%);
 }
-.header-content .left-header .image img:hover {
+.header-content .left-header img:hover {
   filter: grayscale(0);
 }
-.header-content .right-header {
+
+.right-header {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-right: 15rem;
 }
-.header-content .right-header .name {
+.right-header .name {
   font-size: 3rem;
 }
-.header-content .right-header .name span {
+.right-header .name span {
   color: var(--color-secondary);
 }
-.header-content .right-header p {
+.right-header p {
   margin: 1.5rem 0;
   line-height: 2rem;
 }
@@ -300,11 +301,10 @@ section {
 
 .portfolios {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 2fr;
   grid-gap: 2rem;
   margin-top: 3rem;
 }
-
 .portfolios .portfolio-item {
   position: relative;
   border-radius: 15px;
@@ -366,13 +366,14 @@ section {
   color: var(--color-primary);
 }
 
-.portfolio-item:hover .hover-items {
-  opacity: 1;
-  transform: scale(1);
-}
 .portfolios .portfolio-description span {
   color: var(--color-secondary);
   font-weight: 800;
+}
+
+.portfolio-item:hover .hover-items {
+  opacity: 1;
+  transform: scale(1);
 }
 
 .blogs {
