@@ -7,7 +7,7 @@
 
 :root {
   --color-primary: #141414;
-  --color-secondary: #c28eaa;
+  --color-secondary: #aa71a2;
   --color-white: #fafffd;
   --color-black: #000;
   --color-grey0: #f8f8f8;
@@ -173,8 +173,8 @@ section {
 .header-content .left-header .image img {
   width: 60%;
   height: 60%;
-  position: relative;
   left: 10%;
+  position: relative;
   transition: all 0.4s ease-in-out;
   filter: grayscale(100%);
 }
@@ -304,6 +304,7 @@ section {
   grid-gap: 2rem;
   margin-top: 3rem;
 }
+
 .portfolios .portfolio-item {
   position: relative;
   border-radius: 15px;
@@ -368,6 +369,10 @@ section {
 .portfolio-item:hover .hover-items {
   opacity: 1;
   transform: scale(1);
+}
+.portfolios .portfolio-description span {
+  color: var(--color-secondary);
+  font-weight: 800;
 }
 
 .blogs {
